@@ -25,6 +25,31 @@
 
 <body>
 
+    <div class="bg-video">
+        <!-- Para rodar o video sem precisar dar play (autoplay) em loop e sem som (muted) -->
+        <video class="video" autoplay loop muted>
+            <!-- Caminho do video e o tipo > video e mp4 -->
+            <source src="./src/assets/video/yugi.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="container__left framed-golden-2">
+            <div class="score_box frame">
+                <span id="score_points">Win : 0 | Lose : 0</span>
+            </div>
+            <div class="menu__avatar">
+                <img id="card-image" alt="img-card-game">
+            </div>
+            <div class="card_details frame">
+                <p id="card_name">a</p>
+                <p id="card_type">a</p>
+            </div>
+        </div>
+        <div class="container__right">
+            <div class="card_box__container">
+            </div>
+        </div>
+    </div>
 
     <script src="./src/scripts/engine.js" defer></script>
 </body>

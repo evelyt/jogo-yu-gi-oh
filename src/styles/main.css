@@ -1,3 +1,67 @@
-body{
-    background-color: aquamarine;
+.bg-video,
+.container {
+    display: flex;
 }
+
+
+/* Estilizacao do video - inicio*/
+.bg-video {
+    position: absolute;
+    /* z-index: quando negativo fica atras dos elemento, positivo fica na frente */
+    z-index: -2;
+        /* O mesmo ira ocupar 100% da ocupacao da tela altura e largura */
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.bg-video .video {
+    height: 100vh;
+}
+
+/* (::after)Adiciona um elemento depois da classe */
+.bg-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.8) 50%,
+            rgba(0, 0, 0, 1) 100%);
+}
+
+/* Estilizacao do video - fim*/
+
+/* Estilizacao do container - inicio*/
+.container {
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+}
+/* Estilizacao do container - fim*/
+
+/* Estilizacao do container__left - inicio*/
+.container__left {
+    width: 35%;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.score_box{
+    background-color: #ffffff;
+    padding: 30px;
+}
+.frame{
+   border: 3px solid #000000;
+   border-radius: 5px; 
+}
+.card_details{
+    background-color: #ffffff;
+}
+/* Estilizacao do container__left - fim*/
