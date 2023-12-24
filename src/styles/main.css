@@ -1,17 +1,10 @@
-.bg-video,
-.container,
-.card_details {
-    display: flex;
-}
-
-
 /* Estilizacao do video - inicio*/
 .bg-video {
+    display: flex;
     position: absolute;
     /* z-index: quando negativo fica atras dos elemento, positivo fica na frente */
     z-index: -2;
         /* O mesmo ira ocupar 100% da ocupacao da tela altura e largura */
-
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -40,6 +33,7 @@
 
 /* Estilizacao do container - inicio*/
 .container {
+    display: flex;
     position: relative;
     z-index: 3;
     height: 100vh;
@@ -63,6 +57,7 @@
    border-radius: 5px; 
 }
 .card_details{
+    display: flex;
     background-color: #ffffff;
     padding: 1rem;
     flex-direction: column;
@@ -71,7 +66,6 @@
     height: 6rem;
     width: 100%;
 }
-
 #card_name{
     font-size: 0.8rem;
 }
@@ -79,3 +73,50 @@
     font-size: 1rem;
 }
 /* Estilizacao do container__left - fim*/
+
+/* Estilizacao do container__right - inicio*/
+.container__right{
+    width: 65%;
+}
+.card_box{
+    display: flex;
+    flex-direction: row;
+    height: 9rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-box__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 0.3rem; 
+}
+.card-versus__container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.1rem;
+    margin-top: 2rem;
+    height: 300px;
+}
+
+.versus-top,
+.versus-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card-infield{
+    height: 11.2rem;
+    width: 8rem;
+    /* border: 1px solid #fff; */
+    border-radius: 8px;
+}
+
+#next-duel{
+    display: none;
+}
+/* Estilizacao do container__right - fim*/
