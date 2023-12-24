@@ -54,6 +54,7 @@ const cardData = [
 async function createCardImage(idCard, fieldSide) {
     const cardImage = document.createElement("img");
 
+    // Atributos html <img class = "card" data-id = "(id da carta)" src="./src/assets/icons/card-back.png" heigth="100px" >
     cardImage.setAttribute("height", "100px");
     cardImage.setAttribute("src", `${pathImages}card-back.png`);
     cardImage.setAttribute("data-id", idCard);
@@ -73,6 +74,25 @@ async function createCardImage(idCard, fieldSide) {
     }
 
     return cardImage;
+}
+
+async function setCardsField(cardId){
+
+    await removeAllCardsImages();
+
+    let computerCardId = await getRandomCardId();
+
+    state.fieldCards.player.style.display = "block";
+    state.fieldCards.computer.style.display = "block";
+
+    state.fieldCards.player.src = cardData[cardId].img;
+    state.fieldCards.compuer.src = cardData[computerCardId].img;
+
+    let duelResults = await checkDuelResults(cardId, computerCardId);
+
+    await updateScore();
+    await drawButton(duelResults);
+
 }
 
 async function drawSelectCard(index){
