@@ -4,7 +4,7 @@
     position: absolute;
     /* z-index: quando negativo fica atras dos elemento, positivo fica na frente */
     z-index: -2;
-        /* O mesmo ira ocupar 100% da ocupacao da tela altura e largura */
+    /* O mesmo ira ocupar 100% da ocupacao da tela altura e largura */
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -38,25 +38,30 @@
     z-index: 3;
     height: 100vh;
 }
+
 /* Estilizacao do container - fim*/
 
 /* Estilizacao do container__left - inicio*/
 .container__left {
     width: 35%;
     min-width: 300px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.score_box{
+
+.score_box {
     background-color: #ffffff;
     padding: 30px;
 }
-.frame{
-   border: 3px solid #000000;
-   border-radius: 5px; 
+
+.frame {
+    border: 3px solid #000000;
+    border-radius: 5px;
 }
-.card_details{
+
+.card_details {
     display: flex;
     background-color: #ffffff;
     padding: 1rem;
@@ -66,19 +71,23 @@
     height: 6rem;
     width: 100%;
 }
-#card_name{
+
+#card_name {
     font-size: 0.8rem;
 }
-#card_type{
+
+#card_type {
     font-size: 1rem;
 }
+
 /* Estilizacao do container__left - fim*/
 
 /* Estilizacao do container__right - inicio*/
-.container__right{
+.container__right {
     width: 65%;
 }
-.card_box{
+
+.card_box {
     display: flex;
     flex-direction: row;
     height: 9rem;
@@ -86,14 +95,16 @@
     align-items: center;
     justify-content: space-around;
 }
-.card-box__container{
+
+.card-box__container {
     height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
-    padding: 0.3rem; 
+    padding: 0.3rem;
 }
-.card-versus__container{
+
+.card-versus__container {
     display: flex;
     flex-direction: column;
     padding-top: 0.1rem;
@@ -102,21 +113,33 @@
 }
 
 .versus-top,
-.versus-bottom{
+.versus-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
 }
 
-.card-infield{
+.card-infield {
     height: 11.2rem;
     width: 8rem;
     /* border: 1px solid #fff; */
     border-radius: 8px;
 }
 
-#next-duel{
+#next-duel {
     display: none;
 }
+
 /* Estilizacao do container__right - fim*/
+
+/* Classe card - criada dinamicamente no engige.js */
+
+.card {
+    transition: transform 0.2s;
+}
+
+/* (:hover) Efeito quando passa o mouse em cima do elemnto */
+.card:hover {
+    transform: scale(1.2);
+}
