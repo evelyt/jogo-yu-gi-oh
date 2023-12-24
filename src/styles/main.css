@@ -1,5 +1,6 @@
 .bg-video,
-.container {
+.container,
+.card_details {
     display: flex;
 }
 
@@ -63,5 +64,18 @@
 }
 .card_details{
     background-color: #ffffff;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+
+#card_name{
+    font-size: 0.8rem;
+}
+#card_type{
+    font-size: 1rem;
 }
 /* Estilizacao do container__left - fim*/
