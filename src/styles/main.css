@@ -129,6 +129,7 @@
 
 #next-duel {
     display: none;
+    text-transform: uppercase;
 }
 
 /* Estilizacao do container__right - fim*/
