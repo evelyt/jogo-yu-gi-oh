@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
 
     <!-- Reset Css -->
     <link rel="stylesheet" href="./src/styles/reset.css">
@@ -24,6 +27,9 @@
 </head>
 
 <body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3" />
+    </audio>
 
     <div class="bg-video">
         <!-- Para rodar o video sem precisar dar play (autoplay) em loop e sem som (muted) -->
@@ -59,7 +65,7 @@
                         <img src="./src/assets/icons/millenium2.png" height="100px">
                         <div class="card-infield">
                             <img id="computer-field-card" height="180px" width="125px">
-                        </div>    
+                        </div>
                     </div>
 
                     <div class="versus-bottom">

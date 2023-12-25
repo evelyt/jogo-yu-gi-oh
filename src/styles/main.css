@@ -1,3 +1,19 @@
+/* Configuracao do cursor personalizado */
+/* Cursor padrao - usar default */
+body {
+    cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+/* Cursor brilhante > auto > cursor de acordo com a situacao*/
+button,
+a,
+img:hover,
+button:hover,
+a:hover {
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+
+}
+
 /* Estilizacao do video - inicio*/
 .bg-video {
     display: flex;
